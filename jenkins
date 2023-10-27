@@ -1,0 +1,30 @@
+STEP 3: Creating the pipeline
+● Start jenkins
+● New Item → Pipeline →Give name to Pipeline (e.g. Maven_Pipeline) →OK
+● A window will open to specify details about pipeline
+○ Add description
+○ Check the following checkbox
+
+Github project → Add URL of Github repository
+
+○ Build Triggers
+
+Build whenever a SNAPSHOT dependency is built
+GitHub hook trigger for GITScm polling
+
+○ Pipeline
+■ From dropdown list select Pipeline Script
+■ Inside the text area from dropdown list select Hello World
+■ A script will be generated
+Use Groovy sandbox
+
+○ Click Apply
+○ Click Save
+● Click on Build Now and monitor the build.
+● You can add more stages to the Jenkins pipeline script and monitor build.
+Refer: https://www.jenkins.io/doc/book/pipeline/jenkinsfile/
+● Check console output.
+STEP 4: Checking the status on committing changes in
+GitHub
+● Make some changes in the Github repository and check the triggers that
+automatically start building the pipeline in the jenkins.
